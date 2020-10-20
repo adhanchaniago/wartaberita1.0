@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+/* Header/Blog Title */
+.header h2 {
+    color: #333087;
+    padding: 30px;
+    font-size: 48px;
+    text-align: center;
+    background: #C2D3DA;
+    font-family: "Montserrat";
+    font-weight: bold;
+
+}
+
+.header .loginbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 14px 18px;
+    margin: 0px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-family: "Montserrat";
+    float: right;
+    border-radius: 25%;
+}
+
+.header .signupbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 14px 18px;
+    margin: 0px 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-family: "Montserrat";
+    float: right;
+    border-radius: 25%;
+}
+
+.header .logoutbtn {
+    background-color: #4CAF50;
+    color: black;
+    padding: 14px 18px;
+    margin: 0px;
+    margin-left:15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-family: "Montserrat";
+    float: right;
+    border-radius: 10px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Form post baru*/
+#judul{
+    resize: none;
+}
+
+textarea{
+    font-family: 'Marko One';
+}
+
+.newpost, #judul, #kategori{
+    border-radius: 5px;
+}
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+    margin-top: 25px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+h3 {
+    font-family: 'Marko One';
+}
+
+.posting{
+    width: 100%;
+}
+
+.posting img{
+    width: 25%;
+    float: left;
+}
+
+.posting p{
+    width: 72%;
+    margin-left: 250px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+     background-color: #D8D6D6;
+     padding: 20px;
+     margin-top: 20px;
+     border-radius: 5px;
+}
+
+h2 {
+    font-family: 'Marko One';
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* button */
+#like button{
+    border:none;
+    background-color: transparent;
+    padding: 20px;
+}
+#like img{
+    width: 30px;
+}
+
+#dislike button{
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+}
+#dislike img{
+    width: 30px;
+}
+
+.submit{
+    padding: 5px 18px;
+    margin: 0px 80px;
+}
+
+.submit, #crud{
+    background-color: #060A32;
+    color: white;
+    padding: 5px 18px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    font-family: "Arial";
+    border-radius: 5px;
+}
+
+/* Komentar */
+textarea {
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #EFEFEF;
+    margin-top: 20px;
+    visibility: visible;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
